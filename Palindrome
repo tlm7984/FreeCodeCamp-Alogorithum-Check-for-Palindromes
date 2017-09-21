@@ -1,0 +1,12 @@
+function palindrome(str) {
+  // Good luck!
+ var myStr = /\W|_/g;
+  str=str.replace(myStr, "").toLowerCase().split("").reverse("").join("");
+ var palindromatic = str.replace(myStr, "").toLowerCase().split("").reverse("").join("");
+
+  return Boolean(str===palindromatic);
+}
+
+
+
+palindrome("A man, a plan, a canal. Panama");
